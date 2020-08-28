@@ -1,16 +1,16 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: web-app-cluster2
-  namespace: web-app
+  name: httpd                           
+  namespace: simple-app
   labels:
-    deployment: hello
+    app: httpd
   annotations:
     apps.open-cluster-management.io/github-branch: master
-    apps.open-cluster-management.io/github-path: lab-5-assets/overlays/cluster2
+    apps.open-cluster-management.io/github-path: simple-app-assets
 spec:
-  channel:  web-app/web-app-channel
+  channel:  simple-app/federation
   placement: 
     placementRef: 
       kind: PlacementRule
-      name: cluster2
+      name: devclusters
