@@ -4,5 +4,5 @@ metadata:
   name: web-app-channel
   namespace: web-app
 spec:
-  pathname: 'https://github.com/johwes/rhacmgitopslab.git'
+  pathname: 'https://github.com/johwes/rhacm-forum2020.git'
   type: GitHub
